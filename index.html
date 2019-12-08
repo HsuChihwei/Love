@@ -1,27 +1,29 @@
 <!--
  * @Date: 2019-12-08 13:33:51
- * @LastEditTime: 2019-12-08 15:31:29
+ * @LastEditTime: 2019-12-08 15:58:40
  -->
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>小萍萍滴相册</title>
-		<link rel="stylesheet" href="css/hovertree.css" />
-	</head>
-	<body>
-		<div class="hovertreeinfo">
-			<h2></h2>
-		</div>
-		<!-- 仅自动播放音乐 -->
-		<audio loop src="img/qianyuqianxun.mp3" id="audio" autoplay preload="auto">该浏览器不支持audio属性</audio>
-		<!-- <audio loop src="img/qianyuqianxun.mp3" id="audio" controls autoplay preload="auto"></audio> -->
-		<script type="text/javascript">
+
+<head>
+	<meta charset="utf-8" />
+	<title>小萍萍滴相册</title>
+	<link rel="stylesheet" href="css/hovertree.css" />
+</head>
+
+<body>
+	<div class="hovertreeinfo">
+		<h2></h2>
+	</div>
+	<!-- 仅自动播放音乐 -->
+	<audio loop src="img/qianyuqianxun.mp3" id="audio" autoplay preload="auto">该浏览器不支持audio属性</audio>
+	<!-- <audio loop src="img/qianyuqianxun.mp3" id="audio" controls autoplay preload="auto"></audio> -->
+	<script type="text/javascript">
 		//--创建页面监听，等待微信端页面加载完毕 触发音频播放
 		document.addEventListener('DOMContentLoaded', function () {
 			function audioAutoPlay() {
 				var audio = document.getElementById('audio');
-					audio.play();
+				audio.play();
 				document.addEventListener("WeixinJSBridgeReady", function () {
 					audio.play();
 				}, false);
@@ -32,58 +34,59 @@
 		document.addEventListener('touchstart', function () {
 			function audioAutoPlay() {
 				var audio = document.getElementById('audio');
-					audio.play();
+				audio.play();
 			}
 			audioAutoPlay();
 		});
-		</script>
+	</script>
 
-		<!--/*外层最大容器*/-->
-		<div class="wrap">
-			<!--	/*包裹所有元素的容器*/-->
-			<div class="cube">
-				<!--前面图片 -->
-				<div class="out_front">
-					<img src="img/img01.jpg " class="pic" />
-				</div>
-				<!--后面图片 -->
-				<div class="out_back">
-					<img src="img/img02.jpg" class="pic"/>
-				</div>
-				<!--左图片 -->
-				<div class="out_left">
-					<img src="img/img03.jpg" class="pic" />
-				</div>
-				<div class="out_right">
-					<img src="img/img04.jpg" class="pic" />
-				</div>
-				<div class="out_top">
-					<img src="img/img05.jpg" class="pic" />
-				</div>
-				<div class="out_bottom">
-					<img src="img/img06.jpg" class="pic" />
-				</div>
-				<!--小正方体 -->
-				<span class="in_front">
-					<img src="img/img07.jpg" class="in_pic" />
-				</span>
-				<span class="in_back">
-					<img src="img/img08.jpg" class="in_pic" />
-				</span>
-				<span class="in_left">
-					<img src="img/img09.jpg" class="in_pic" />
-				</span>
-				<span class="in_right">
-					<img src="img/img10.jpg" class="in_pic" />
-				</span>
-				<span class="in_top">
-					<img src="img/img11.jpg" class="in_pic" />
-				</span>
-				<span class="in_bottom">
-					<img src="img/img12.jpg" class="in_pic" />
-				</span>
+	<!--/*外层最大容器*/-->
+	<div class="wrap">
+		<!--	/*包裹所有元素的容器*/-->
+		<div class="cube">
+			<!--前面图片 -->
+			<div class="out_front">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdad54qij30u013o42l.jpg" class="pic" />
 			</div>
+			<!--后面图片 -->
+			<div class="out_back">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdaczkskj30hp0m8dl5.jpg" class="pic" />
+			</div>
+			<!--左图片 -->
+			<div class="out_left">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdac2ne0j30ty13wdig.jpg" class="pic" />
+			</div>
+			<div class="out_right">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdahz2dkj30u0140wh9.jpg" class="pic" />
+			</div>
+			<div class="out_top">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdad98a7j30tx0tzdh5.jpg" class="pic" />
+			</div>
+			<div class="out_bottom">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdac8gl7j30ty196djg.jpg" class="pic" />
+			</div>
+			<!--小正方体 -->
+			<span class="in_front">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdaga99cj31900tywj5.jpg" class="in_pic" />
+			</span>
+			<span class="in_back">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdadjwthj303f05kta3.jpg" class="in_pic" />
+			</span>
+			<span class="in_left">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdah1fzij30b408cjvt.jpg" class="in_pic" />
+			</span>
+			<span class="in_right">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdahiugzj30go0m8td8.jpg" class="in_pic" />
+			</span>
+			<span class="in_top">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdafpg9zj30690b4aag.jpg" class="in_pic" />
+			</span>
+			<span class="in_bottom">
+				<img src="http://ww1.sinaimg.cn/large/007ghWPOly1g9pdahc095j306o04gjsz.jpg" class="in_pic" />
+			</span>
 		</div>
+	</div>
 
-	</body>
+</body>
+
 </html>
